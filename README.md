@@ -26,31 +26,31 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
-```c
+```
 models.py
 
 from django.db import models
 from django.contrib import admin
 class bookdetails(models.Model):
-       bookid=models.IntegerField(primary_key=true);
-       bookname=models.CharField(max_length=25);
-       author=models.CharField(max_length=20);
-       publishedyear=models.DateField();
-       price=models.IntegerField();
-       publishedcompany=models.CharField(max_length=20);
+       bookid=models.IntegerField()
+       bookname=models.CharField(max_length=25)
+       author=models.CharField(max_length=20)
+       publishedyear=models.DateField()
+       price=models.IntegerField()
+       publishedcompany=models.CharField(max_length=20)
 class bookdetailsAdmin(admin.ModelAdmin):
-      list_dispaly=("bookid","bookname","author","publishedyear","price","publishedcompany");
+      list_display=("bookid","bookname","author","publishedyear","price","publishedcompany")
 
 admin.py
 
 from django.contrib import admin
 from .models import bookdetails,bookdetailsAdmin
-Admin.site.register(bookdetails,bookdetailsAdmin)
+admin.site.register(bookdetails,bookdetailsAdmin)
 
 ```
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![Alt text](<Screenshot (76).png>)
 
 
 ## RESULT
