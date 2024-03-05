@@ -1,14 +1,13 @@
 # Ex02 Django ORM Web Application
 ## NAME: AVINASH T
 ## REG NO: 212223230026
-## Date: 
+## Date: 05.03.24
 
 ## AIM
 To develop a Django application to store and retrieve data from a Book database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram
-
-Include your ER diagram here
+![Alt text](entity.jpg)
 
 ## DESIGN STEPS
 
